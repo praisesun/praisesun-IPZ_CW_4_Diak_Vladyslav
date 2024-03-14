@@ -14,7 +14,7 @@ import ua.edu.lntu.cw_4.Task
 import ua.edu.lntu.cw_4.ui.theme.IPZ_CW_4_Diak_VladyslavTheme
 
 @Composable
-fun TaskDetailScreen(modifier: Modifier = Modifier, navController: NavController, task: Task) {
+fun TaskDetails(modifier: Modifier = Modifier, navController: NavController, task: Task) {
 
     Column(modifier = Modifier.background(color = task.getColor())) {
         Text(task.name, style = TextStyle(fontSize = 64.sp))
