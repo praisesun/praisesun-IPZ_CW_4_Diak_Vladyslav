@@ -18,11 +18,12 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import ua.edu.lntu.cw_4.Task
 import ua.edu.lntu.cw_4.ui.theme.IPZ_CW_4_Diak_VladyslavTheme
 
 @Composable
-fun ListOfTasks(modifier: Modifier = Modifier) {
+fun ListOfTasks(modifier: Modifier = Modifier, navController: NavController) {
     val taskList =
         (1..100).map {
             Task("Task $it", "Description $it", listOf(true, false).random())
