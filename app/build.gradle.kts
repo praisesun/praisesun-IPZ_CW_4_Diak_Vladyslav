@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ua.edu.lntu.cw_4"
+    namespace = "com.example.ipz_cw_4"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ua.edu.lntu.cw_4"
+        applicationId = "com.example.ipz_cw_4"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -50,7 +50,7 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
